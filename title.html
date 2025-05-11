@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Portfolio</title>
+<style>
+body {
+margin: 0;
+ background-color:white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+padding-top: 0px;
+}
+.header {
+  padding: 0px 0px;
+ 
+}
+.name{
+height:00px;
+}
+h1{
+font-family:"Brush Script MT";
+background-color: black;
+color:white;
+margin: 0;
+
+}
+.tablink {
+background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+.tablink:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+
+
+</head>
+
+<body>
+<div class="header" id="myHeader">
+<div class="name">
+<h1>&nbspPoojari Arts</h1>
+</div>
+<div style="float:right">
+<a href="title.html" >
+<button class="tablink" onclick="openPage('Home', this)"><i class="fa fa-home" style="font-size:30px"></i></button></a>
+
+<a target="_blank" href="https://www.instagram.com/poojari_arts?igsh=MW5wbHB1NzNjZzR6Mw=="  rel="http://www.instagram.com/"><button class="tablink" onclick="openPage('Instagram', this)"><i class="fa fa-instagram" style="font-size:30px"></i></button></a>
+
+<a target="_blank" href="https://www.youtube.com/@poojari_arts"  rel="http://www.youtube.com/"><button class="tablink" onclick="openPage('Instagram', this)"><i class="fa fa-youtube-play" style="font-size:30px"></i></button></a>
+
+
+<a href="contact.html"><button class="tablink" onclick="openPage('Phone', this)">
+<i class="fa fa-phone" style="font-size:30px"></i></button></a>
+
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<iframe src="main.html" height="300px" width="100%" style="border:none;"></iframe>
+<iframe src="artworks.html" height="3600px" width="100%" style="border:none;"></iframe>
+</body>
+</html>
